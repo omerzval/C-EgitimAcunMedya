@@ -64,6 +64,32 @@ Console.WriteLine("-----------------------------");
         int thirdNumber=Convert.ToInt32(Console.ReadLine());
         avarage=(firstNumber+secondNumber+thirdNumber)/3;
         Console.WriteLine("The average is :" + avarage);
+         #region ÖDEV3
+ //PART 1
+ Console.WriteLine("Please enter a number :");
+ int number = Convert.ToInt32(Console.ReadLine());
+ if (number == 0){  Console.WriteLine("The number is zero."); }
+ else if(number>0) { Console.WriteLine("The number is pozitive."); }
+ else { Console.WriteLine("The number is negative."); }
+ switch(number%2)
+ {
+     case 0: Console.WriteLine("The number is even.");
+         break;
+     case 1: Console.WriteLine("The number is odd.");
+         break;
+ }
+ //PART 2
+ for(int i = 1; i <100;i++)
+ {
+     if (i % 2 == 0&& i%10!=0) { Console.WriteLine(i);}
+     if (i == 50) break;
+ }
+ //PART 3
+ string[] isimler = { "Ali", "Ayşe", "Mehmet", "Zeynep", "Hasan" };
+ foreach(string isim in isimler) { 
+     if(isim=="Zeynep")continue;
+     Console.WriteLine(isim); }
+ #endregion
 
     }
 }
